@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour
 
         // numeros.ForEach
 
-        InflictDamageClass.ApplyDamage(24);
+      //  InflictDamageClass.ApplyDamage(24);
     }
 
     void Update()
