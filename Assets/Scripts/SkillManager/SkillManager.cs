@@ -16,12 +16,18 @@ public class SkillManager : MonoBehaviour
 
 
 
-    public bool CheckLevelRestriction<T>(Player sender , T target) where T : Skill
+    public bool TryLearnSkill<T>(Player sender , T target , out T Result) where T : Skill
     {
         if (sender.Level >= target.LevelRestriction)
+        {
+            Result = target;
             return true;
+        }
         else
+        {
+            Result = default;
             return false;
+        }
     }
 
 
