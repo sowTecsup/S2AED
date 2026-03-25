@@ -14,7 +14,7 @@ public class Player :MonoBehaviour
         //CheckName(Target);
 
 
-        SkillManager.Instance.CheckLevelRestriction(this,Target);
+      Debug.Log(SkillManager.Instance.CheckLevelRestriction(this,Target));
 
     }
 

@@ -415,7 +415,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 174c78a44d889e2419c97bbc5f2b524d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
-  Target: {fileID: 0}
+  Target: {fileID: 11400000, guid: 99960e9dd72ec01469c018771fc88c03, type: 2}
+  Level: 0
+  LearndSkills: []
 --- !u!4 &1930844176
 Transform:
   m_ObjectHideFlags: 0
