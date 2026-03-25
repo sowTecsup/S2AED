@@ -14,5 +14,10 @@ namespace Sowtank.Utils
         {
             action(element); 
         }
+
+        public static TResult Transform<T,TResult>(T element, Func<T, TResult> func)
+        {
+            return func(element);
+        }
     }
 }
