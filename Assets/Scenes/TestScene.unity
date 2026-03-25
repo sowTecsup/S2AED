@@ -690,7 +690,7 @@ MonoBehaviour:
         m_MethodName: BtnSelectSkill
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 99960e9dd72ec01469c018771fc88c03, type: 2}
+          m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
