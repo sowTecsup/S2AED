@@ -17,4 +17,4 @@ MonoBehaviour:
   cost: 2
   cooldown: 5
   damage: 1
-  levelRestriction: 3
+  levelRestriction: 500
