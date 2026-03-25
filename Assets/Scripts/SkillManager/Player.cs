@@ -1,18 +1,12 @@
 using UnityEngine;
 
-public class Player :IDamageable
+public class Player :MonoBehaviour
 {
-    public string Name;
-    public int Life;
 
-
-    public void Move()
+    private void Start()
     {
-        Debug.Log("Player is moving");
+        
     }
 
-    public void TakeDamage(int damage)
-    {
-        Debug.Log("Recibi daño!");
-    }
+
 }
