@@ -16,6 +16,15 @@ public class SkillManager : MonoBehaviour
 
 
 
+    public bool CheckLevelRestriction<T>(Player sender , T target) where T : Skill
+    {
+        if (sender.Level >= target.LevelRestriction)
+            return true;
+        else
+            return false;
+    }
+
+
 
     private void Awake()
     {

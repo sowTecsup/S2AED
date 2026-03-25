@@ -6,10 +6,16 @@ public class Player :MonoBehaviour
 {
     public Skill Target;
 
+    public int Level;
+
     public List<Skill> LearndSkills;
     private void Start()
     {
-        CheckName(Target);
+        //CheckName(Target);
+
+
+        SkillManager.Instance.CheckLevelRestriction(this,Target);
+
     }
 
     public void CheckName(Skill target)
@@ -22,6 +28,8 @@ public class Player :MonoBehaviour
 
         SkillManager.Instance.NameOfSkill(target);
     }
+
+
 
 
 }
