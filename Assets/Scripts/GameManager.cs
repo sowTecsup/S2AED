@@ -3,13 +3,10 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    
-    void Start()
-    {
-        
-    }
+    private Inventory<string> inventory = new();
+    private Inventory<int> inventory2 = new();
 
-    void Update()
+    void Start()
     {
         
     }
