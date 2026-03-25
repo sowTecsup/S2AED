@@ -42,19 +42,22 @@ public class GameManager : MonoBehaviour
         int Value = GameUtils.Transform<Player, int>(player, (x) => x.Life);
 
         int Value2 = GetPlayerLife(player);
+
+
+        TestTakeDamage<Player>(player, 15);
     }
+
 
     public int GetPlayerLife(Player player)
     {
         return player.Life;
     }
-
-
-
-
     public int TestFunc(string value)
     {
        return 12;
     }
-   
+    public void TestTakeDamage<T>( T value,int damage) where T : IDamageable
+    {
+        value.TakeDamage(damage);
+    }
 }
