@@ -45,6 +45,11 @@ public class GameManager : MonoBehaviour
 
 
         TestTakeDamage<Player>(player, 15);
+
+        int simpleReturn = ReturnSimple(out string obj);
+        print(obj);
+
+        int simpleReturn2 = ReturnSimple(out _);
     }
 
 
@@ -59,5 +64,13 @@ public class GameManager : MonoBehaviour
     public void TestTakeDamage<T>( T value,int damage) where T : IDamageable
     {
         value.TakeDamage(damage);
+    }
+
+    public int ReturnSimple(out string value)
+    {
+        value = "Ayuda!!";
+
+        return 1;
+      
     }
 }
